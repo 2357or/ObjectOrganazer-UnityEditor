@@ -3,10 +3,10 @@ using UnityEngine;
 using static UnityEditor.EditorGUILayout;
 using static UnityEngine.GUILayout;
 
-public class OrganizeObject : EditorWindow {
-    [MenuItem ("Plugins/OrganizeObject")]
+public class ObjectOrganazer : EditorWindow {
+    [MenuItem ("Plugins/ObjectOrganazer")]
     public static void ShowWindow () {
-        GetWindow (typeof (OrganizeObject));
+        GetWindow (typeof (ObjectOrganazer));
     }
 
     GameObject prefab;
