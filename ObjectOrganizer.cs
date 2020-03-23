@@ -89,7 +89,8 @@ public class ObjectOrganazer : EditorWindow
                 //生成ボタンが押された時の処理
                 if (Button("Instantiate"))
                 {
-                    if (prefab = null)
+                    //エラーチェック
+                    if (prefab == null)
                     {
                         Debug.LogError("Not set a prefab. Instantiating prefab, it is required to set a prefab");
                         return;
